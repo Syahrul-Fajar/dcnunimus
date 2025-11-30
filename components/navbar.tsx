@@ -129,7 +129,6 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
               >
-                <Sparkles size={16} />
                 Daftar Sekarang
               </a>
             </div>
