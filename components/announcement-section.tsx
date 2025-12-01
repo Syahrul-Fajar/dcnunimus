@@ -21,6 +21,17 @@ const announcements = [
     registerLink: "https://www.dicoding.com/pijak/registration?ref=4086292",
   },
   {
+    image: "/codingcamp.png",
+    date: "29 November 2025",
+    title: "Coding Camp 2026",
+    subtitle: "Powered by DBS Foundation",
+    description: "Pelatihan teknologi informasi berstandar tinggi untuk mempersiapkan lulusan dengan keterampilan siap terap.",
+    tag: "Event",
+    deadline: new Date("2026-01-01T23:59:59"),
+    detailsLink: "https://www.dbs.com/spark/index/id_id/site/codingcamp/index.html",
+    registerLink: "https://www.dicoding.com/codingcamp/registration",
+  },
+  {
     image: "/microsoft.png",
     date: "29 November 2025",
     title: "Microsoft Elevate (METC)",
@@ -41,17 +52,6 @@ const announcements = [
     deadline: new Date("2025-12-27T23:59:59"),
     detailsLink: "https://idcamp.ioh.co.id/faq",
     registerLink: "https://idcamp.ioh.co.id/login?referrer_id=4086292",
-  },
-  {
-    image: "/codingcamp.png",
-    date: "29 November 2025",
-    title: "Coding Camp 2026",
-    subtitle: "Powered by DBS Foundation",
-    description: "Pelatihan teknologi informasi berstandar tinggi untuk mempersiapkan lulusan dengan keterampilan siap terap.",
-    tag: "Event",
-    deadline: new Date("2026-01-01T23:59:59"),
-    detailsLink: "https://www.dbs.com/spark/index/id_id/site/codingcamp/index.html",
-    registerLink: "https://www.dicoding.com/codingcamp/registration",
   },
 ]
 
