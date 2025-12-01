@@ -88,9 +88,9 @@ export function HeroSection() {
                 className="h-14 px-8 bg-white text-black hover:bg-slate-200 font-bold rounded-full transition-transform hover:scale-105 active:scale-95"
                 asChild
               >
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2KD_n_ciOSw_d2cBTWWj0dVWjY8_8ZtKe8wp-pdAem1-Gzg/viewform?usp=header
-                  target="_blank"
-              ">
+                <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf2KD_n_ciOSw_d2cBTWWj0dVWjY8_8ZtKe8wp-pdAem1-Gzg/viewform?usp=header"
+              target="_blank">
                   Gabung Sekarang
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
