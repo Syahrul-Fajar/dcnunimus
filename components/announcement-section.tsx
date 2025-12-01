@@ -17,7 +17,8 @@ const announcements = [
     description: "Program komprehensif untuk membekali individu dengan keterampilan teknis esensial di pasar kerja modern guna menghasilkan Multi-Platform App Developer andal.",
     tag: "Beasiswa",
     deadline: new Date("2025-12-31T23:59:59"),
-    link: "https://www.dicoding.com/pijak/registration?ref=4086292",
+    detailsLink: "https://www.dicoding.com/pijak",
+    registerLink: "https://www.dicoding.com/pijak/registration?ref=4086292",
   },
   {
     image: "/microsoft.png",
@@ -27,7 +28,8 @@ const announcements = [
     description: "Program pelatihan eksklusif untuk profesional, akademisi, dan pemimpin IT yang ingin menguasai pengembangan aplikasi tingkat lanjut.",
     tag: "Pelatihan Coding",
     deadline: new Date("2026-06-15T23:59:59"),
-    link: "https://www.dicoding.com/elevate/registration?referrer_id=4086292",
+    detailsLink: "https://www.dicoding.com/elevate",
+    registerLink: "https://www.dicoding.com/elevate/registration?referrer_id=4086292",
   },
   {
     image: "/idcamp.png",
@@ -37,7 +39,8 @@ const announcements = [
     description: "Program beasiswa CSR Indosat Ooredoo Hutchison untuk mencetak talenta digital Indonesia siap kerja.",
     tag: "Beasiswa",
     deadline: new Date("2025-12-27T23:59:59"),
-    link: "https://idcamp.ioh.co.id/login?referrer_id=4086292",
+    detailsLink: "https://idcamp.ioh.co.id/faq",
+    registerLink: "https://idcamp.ioh.co.id/login?referrer_id=4086292",
   },
   {
     image: "/codingcamp.png",
@@ -47,7 +50,8 @@ const announcements = [
     description: "Pelatihan teknologi informasi berstandar tinggi untuk mempersiapkan lulusan dengan keterampilan siap terap.",
     tag: "Event",
     deadline: new Date("2026-01-01T23:59:59"),
-    link: "#",
+    detailsLink: "https://www.dbs.com/spark/index/id_id/site/codingcamp/index.html",
+    registerLink: "https://www.dicoding.com/codingcamp/registration",
   },
 ]
 
@@ -138,7 +142,7 @@ export function AnnouncementSection() {
   return (
     <section id="announcement" className="py-24 relative bg-[#09090b] border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
@@ -149,7 +153,7 @@ export function AnnouncementSection() {
               Jangan lewatkan beasiswa, pelatihan, dan event teknologi terbaru.
             </p>
           </div>
-          
+
           {/* Navigation Buttons */}
           <div className="flex gap-2">
             <button
@@ -217,17 +221,26 @@ export function AnnouncementSection() {
                 <CountdownTimer deadline={item.deadline} />
 
                 <div className="mt-4 pt-4 border-t border-zinc-800 grid grid-cols-2 gap-3">
-                   <Link 
-                     href={item.link} 
-                     className="text-center text-xs font-semibold text-zinc-400 hover:text-white py-3 transition-colors flex items-center justify-center"
-                   >
-                     Details
-                   </Link>
-                   <Button asChild size="sm" className="bg-white text-zinc-950 hover:bg-zinc-200 font-bold w-full">
-                     <Link href={item.link}>
-                       Daftar <ArrowRight className="ml-1.5 w-3.5 h-3.5" />
-                     </Link>
-                   </Button>
+                  {/* Link Detail (New Tab) */}
+                  <Link
+                    href={item.detailsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-center text-xs font-semibold text-zinc-400 hover:text-white py-3 transition-colors flex items-center justify-center"
+                  >
+                    Details
+                  </Link>
+
+                  {/* Link Daftar (New Tab) */}
+                  <Button asChild size="sm" className="bg-white text-zinc-950 hover:bg-zinc-200 font-bold w-full">
+                    <Link
+                      href={item.registerLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Daftar <ArrowRight className="ml-1.5 w-3.5 h-3.5" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>

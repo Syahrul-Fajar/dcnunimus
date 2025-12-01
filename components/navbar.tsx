@@ -80,7 +80,7 @@ export function Navbar() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSf2KD_n_ciOSw_d2cBTWWj0dVWjY8_8ZtKe8wp-pdAem1-Gzg/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center justify-center gap-2 px-6 py-2.5 font-semibold text-white transition-all duration-300 bg-blue-600 rounded-full hover:bg-blue-500 hover:scale-105 hover:shadow-[0_0_20px_-5px_rgba(37,99,235,0.5)] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0f]"
+              className="group relative inline-flex items-center justify-center gap-2 px-6 py-2.5 font-semibold text-white transition-all duration-300 bg-blue-500 rounded-full hover:bg-blue-500 hover:scale-105 hover:shadow-[0_0_20px_-5px_rgba(37,99,235,0.5)] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0f]"
             >
               <span>Daftar Sekarang</span>
               <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -127,9 +127,8 @@ export function Navbar() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSf2KD_n_ciOSw_d2cBTWWj0dVWjY8_8ZtKe8wp-pdAem1-Gzg/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
               >
-                <Sparkles size={16} />
                 Daftar Sekarang
               </a>
             </div>
