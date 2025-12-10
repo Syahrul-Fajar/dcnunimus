@@ -29,7 +29,7 @@ const announcements = [
     tag: "Event",
     deadline: new Date("2026-01-01T23:59:59"),
     detailsLink: "https://www.dbs.com/spark/index/id_id/site/codingcamp/index.html",
-    registerLink: "https://www.dicoding.com/codingcamp/registration",
+    registerLink: "https://www.dicoding.com/codingcamp/registration?ref=2452955",
   },
   {
     image: "/microsoft.png",
